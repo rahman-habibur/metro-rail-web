@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Rail Ticket System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="main-content">
+    <h1 style="text-align: center; background-color: #191d2b">Thanks for being with <span style="color: #27AE60">DHAKA METRO RAIL</span></h1>
+    <p style="text-align: center; background-color: #191d2b">Give us your feedback and issue while 
+        purchasing ticket to help us improve in our development.</p>
+    <div class="container">
+
+        <form action="php/contact.php" method="POST">
+            
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="user_name" placeholder="Your Name..">
+      
+            <label for="email">Email: </label>
+            <input type="text" id="lname" name="user_email" placeholder="Enter Your Email..">
+            
+            <label for="phone">Phone Number: </label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number..">
+      
+
+            <label for="issuee">About The Issues</label>
+            <select id="issueee" name="issueee">
+                <option value="issue">Select</option>
+                <option value="Ticket Problem">Ticket Problem</option>
+                <option value="Ticket Cancel">Ticket Cancel</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+      
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+            <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+    <div class="controlls">
+
+        <div class="control-home active-btn" data-id="home">
+            <a href="index.html"><i class="fa-solid fa-house-user"></i></a>
+        </div>
+
+        <div class="control-about" data-id="about">
+            <a href="about.html"><i class="fa-solid fa-train-subway"></i></a>
+        </div>
+
+        <div class="control-booking" data-id="booking">
+            <a href="booking.html"><i class="fa-solid fa-chair"></i></a>
+        </div>
+
+        <div class="control-timetable" data-id="timetable">
+            <a href="timetable.html"><i class="fa-solid fa-calendar-check"></i></a>
+            
+        </div>
+
+        <div class="control-contact" data-id="contact">
+            <a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
+        </div>
+
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
